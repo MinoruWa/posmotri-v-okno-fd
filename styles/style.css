@@ -117,7 +117,6 @@ ol {
   flex-grow: 1;
   overflow:hidden;
   max-width:196px;
-  max-height:103px;
 }
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -171,7 +170,10 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
   overflow: hidden;
   text-overflow: ellipsis;
 }
